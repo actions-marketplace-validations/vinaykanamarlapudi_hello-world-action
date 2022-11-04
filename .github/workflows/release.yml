@@ -32,7 +32,7 @@ jobs:
         # of private images because the shell prompt for whether to upload to
         # the public transparency log panics.  After 1.4 cosign doesn't panic,
         # but it won't upload to the transparency log without --force.
-        run: cosign sign -a foo=bar ghcr.io/vinaykanamarlapudi/hello-world-action:6.4.0
+        run: cosign sign -a foo=bar ghcr.io/vinaykanamarlapudi/hello-world-action:6.5.0
         
 
    
