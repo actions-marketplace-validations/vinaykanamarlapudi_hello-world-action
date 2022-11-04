@@ -15,10 +15,13 @@ jobs:
       - name: Checking out!
         uses: actions/checkout@v3
        
-      - name: Install cosign
-        uses: sigstore/cosign-installer@main
-        with:
-           cosign-release: 'v1.13.1'
+    #  - name: Install cosign
+    #    uses: sigstore/cosign-installer@main
+    #    with:
+    #      cosign-release: 'v1.13.1'
+           
+      - name: cosign-installer
+        uses: sigstore/cosign-installer@v2.0.0
          
       - name: Publish action 
         uses: actions-on-packages/package-action@0.4.1
